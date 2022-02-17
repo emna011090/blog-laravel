@@ -13,18 +13,18 @@
 
     
       
-      {{-- @foreach ($post->$comment  as $comments)
-    <h2>Rédigé par  {{$comments->pseudo}} </h2>
-    <p> {{$comments->comment}} </p>
+      @foreach ($post->comment  as $comment)
+    <h2>Rédigé par  {{$comment->pseudo}} </h2>
+    <p> {{$comment->comment}} </p>
         @endforeach
      
-    </div> --}}
+    </div>
 
 
 
-      <form method="POST" action="comment.php">
+      <form method="POST" action="/add_comment">
        <div class="form-group">
-         <input type="hidden" class="form-control" id="id_post" name='id_post' value="">
+         <input type="hidden" class="form-control" id="id_post" name='id_post' value="<?= $post['id'] ?>">
          <label for="pseudo">pseudo</label>
          <input type="text" class="form-control" id="pseudo" name='pseudo'>
 

@@ -36,11 +36,14 @@ h2{
 }
 h1{
     color: #0f7f85;
-    font-size: 150px;
+    font-size: 126px;
     text-align: center;
     font-family: 'Corinthia', cursive;
     padding-top: 120px;
     float: left;
+}
+.post{
+    clear:left;
 }
 </style>
 
